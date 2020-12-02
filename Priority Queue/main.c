@@ -1,14 +1,10 @@
-//
-//  main.c
-//  Priority Queue
-//
-//  Created by Aagman Suri on 02/12/20.
-//
+#include<stdio.h>
+#include<stdlib.h>
 
-#include <stdio.h>
+struct node
+{
+    int priority;
+    int info;
+    struct node *link;
+}*front = NULL;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
-}
