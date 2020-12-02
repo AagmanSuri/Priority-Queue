@@ -33,3 +33,23 @@ void insert(int item, int item_priority)
         p->link = tmp;
     }
 }
+void create(int n)
+{
+    if(flag == 1)
+    {
+        printf("\nYou have already created a Linked list.\n");
+    }
+    else
+    {
+        for(i=0;i<n;i++)
+        {
+            int item, item_priority;
+            printf("\nEnter the item to be added in the Queue: ");
+            scanf("%d",&item);
+            printf("Enter its priority: ");
+            scanf("%d",&item_priority);
+            insert(item, item_priority);
+        }
+    }
+}
+
