@@ -52,4 +52,21 @@ void create(int n)
         }
     }
 }
+void display()
+{
+    struct node *ptr;
+    ptr=front;
+    if(front==NULL){
+        printf("\nQueue is empty\n");
+    }
+    else{
+        printf("\nQueue is:\n");
+        printf("\nPriority       Item\n");
+        while(ptr!=NULL)
+        {
+            printf("%d        %d\n", ptr->priority, ptr->info);
+            ptr = ptr->link;
+        }
+    }
+}
 
