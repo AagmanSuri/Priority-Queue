@@ -69,4 +69,10 @@ void display()
         }
     }
 }
+int main()
+{
+  create(5);
+  insert(2, 1);
+  display();
+}
 
