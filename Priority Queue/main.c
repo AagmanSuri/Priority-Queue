@@ -71,9 +71,36 @@ void display()
 }
 int main()
 {
-  create(5);
-  insert(2, 1);
-  display();
+    int it,prio;
+    int t;
+    printf("Enter the \ncase 1:for Creation\ncase 2: for insert \ncase 3: for display");
+    scanf("%d",&t);
+    
+    int n;
+    
+    do{
+    switch (t) {
+        case 1:
+            printf("Enter the number of creation");
+            scanf("%d",&n);
+            create(n);
+            printf("\n");
+            break;
+        case 2:
+            printf("Enter the number of items and their priority");
+            scanf("%d %d",&it,&prio);
+            insert(it, prio);
+            printf("\n");
+            break;
+        case 3:
+            display();
+            printf("\n");
+            break;
+    }
+        
+    }while(t==0);
+    
+
 }
 
 
