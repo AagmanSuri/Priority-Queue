@@ -98,7 +98,9 @@ int main()
             break;
     }
         
-    }while(t==0);
+    }
+    
+    while(t==0);
     
 
 }
